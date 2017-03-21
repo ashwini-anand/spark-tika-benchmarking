@@ -1,0 +1,760 @@
+
+———————————————————————————————————————New Log Starts————————————————
+Tue Mar 21 04:31:30 UTC 2017
+
+transferred 10 200kb files
+
+real	0m29.490s
+user	0m37.525s
+sys	0m2.854s
+transferred 20 200kb files
+
+real	1m5.769s
+user	1m17.138s
+sys	0m5.667s
+transferred 40 200kb files
+
+real	2m14.176s
+user	2m32.374s
+sys	0m10.910s
+transferred 80 200kb files
+
+real	4m34.525s
+user	5m6.863s
+sys	0m22.844s
+transferred 160 200kb files
+
+real	9m0.770s
+user	10m7.189s
+sys	0m44.308s
+transferred 10 500kb files
+
+real	0m32.206s
+user	0m37.275s
+sys	0m2.730s
+transferred 20 500kb files
+
+real	1m6.852s
+user	1m16.398s
+sys	0m5.828s
+transferred 40 500kb files
+
+real	2m16.301s
+user	2m33.288s
+sys	0m10.899s
+transferred 80 500kb files
+
+real	4m32.598s
+user	5m0.928s
+sys	0m22.437s
+transferred 160 500kb files
+
+real	9m11.858s
+user	10m2.731s
+sys	0m45.867s
+transferred 10 1000kb files
+
+real	0m37.341s
+user	0m38.815s
+sys	0m3.045s
+transferred 20 1000kb files
+
+real	1m10.366s
+user	1m15.022s
+sys	0m5.912s
+transferred 40 1000kb files
+
+real	2m33.720s
+user	2m33.759s
+sys	0m11.175s
+transferred 80 1000kb files
+
+real	4m42.186s
+user	5m3.009s
+sys	0m23.195s
+transferred 160 1000kb files
+
+real	9m40.661s
+user	10m14.374s
+sys	0m46.741s
+transferred 10 10000kb files
+
+real	0m42.955s
+user	0m40.976s
+sys	0m3.202s
+transferred 20 10000kb files
+
+real	2m6.917s
+user	1m20.279s
+sys	0m6.819s
+transferred 40 10000kb files
+
+real	3m44.645s
+user	2m40.171s
+sys	0m12.969s
+transferred 80 10000kb files
+
+real	7m28.567s
+user	5m17.406s
+sys	0m26.077s
+transferred 160 10000kb files
+
+real	14m33.560s
+user	10m34.062s
+sys	0m52.255s
+transferred 10 50000kb files
+
+real	1m57.212s
+user	0m43.211s
+sys	0m4.449s
+transferred 20 50000kb files
+
+real	3m57.709s
+user	1m26.050s
+sys	0m8.723s
+transferred 40 50000kb files
+
+real	7m54.158s
+user	2m51.423s
+sys	0m18.366s
+17/03/21 06:31:33 INFO fs.FileSystem: Ignoring failure to deleteOnExit for path hdfs://asanand01-1.openstacklocal:8020/user/pdf_50000kb_80_files/pdf_50000kb_80_78.pdf._COPYING_
+copyFromLocal: java.nio.channels.ClosedChannelException
+	at org.apache.hadoop.hdfs.DFSOutputStream.checkClosed(DFSOutputStream.java:1617)
+	at org.apache.hadoop.fs.FSOutputSummer.write(FSOutputSummer.java:104)
+	at org.apache.hadoop.fs.FSDataOutputStream$PositionCache.write(FSDataOutputStream.java:58)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at org.apache.hadoop.io.IOUtils.copyBytes(IOUtils.java:87)
+	at org.apache.hadoop.io.IOUtils.copyBytes(IOUtils.java:59)
+	at org.apache.hadoop.io.IOUtils.copyBytes(IOUtils.java:119)
+	at org.apache.hadoop.fs.shell.CommandWithDestination$TargetFileSystem.writeStreamToFile(CommandWithDestination.java:467)
+	at org.apache.hadoop.fs.shell.CommandWithDestination.copyStreamToTarget(CommandWithDestination.java:392)
+	at org.apache.hadoop.fs.shell.CommandWithDestination.copyFileToTarget(CommandWithDestination.java:329)
+	at org.apache.hadoop.fs.shell.CommandWithDestination.processPath(CommandWithDestination.java:264)
+	at org.apache.hadoop.fs.shell.CommandWithDestination.processPath(CommandWithDestination.java:249)
+	at org.apache.hadoop.fs.shell.Command.processPaths(Command.java:317)
+	at org.apache.hadoop.fs.shell.Command.processPathArgument(Command.java:289)
+	at org.apache.hadoop.fs.shell.CommandWithDestination.processPathArgument(CommandWithDestination.java:244)
+	at org.apache.hadoop.fs.shell.Command.processArgument(Command.java:271)
+	at org.apache.hadoop.fs.shell.Command.processArguments(Command.java:255)
+	at org.apache.hadoop.fs.shell.CommandWithDestination.processArguments(CommandWithDestination.java:221)
+	at org.apache.hadoop.fs.shell.CopyCommands$Put.processArguments(CopyCommands.java:267)
+	at org.apache.hadoop.fs.shell.FsCommand.processRawArguments(FsCommand.java:119)
+	at org.apache.hadoop.fs.shell.Command.run(Command.java:165)
+	at org.apache.hadoop.fs.FsShell.run(FsShell.java:297)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:90)
+	at org.apache.hadoop.fs.FsShell.main(FsShell.java:350)
+
+
+———————————————————————————————————————New Log Starts————————————————
+Tue Mar 21 06:49:48 UTC 2017
+
+copyFromLocal: `hdfs:///user/pdf_200kb_10_files/pdf_200kb_10_0.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_10_files/pdf_200kb_10_1.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_10_files/pdf_200kb_10_2.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_10_files/pdf_200kb_10_3.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_10_files/pdf_200kb_10_4.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_10_files/pdf_200kb_10_5.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_10_files/pdf_200kb_10_6.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_10_files/pdf_200kb_10_7.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_10_files/pdf_200kb_10_8.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_10_files/pdf_200kb_10_9.pdf': File exists
+transferred 10 200kb files
+
+real	0m30.682s
+user	0m35.538s
+sys	0m2.560s
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_0.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_1.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_2.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_3.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_4.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_5.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_6.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_7.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_8.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_9.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_10.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_11.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_12.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_13.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_14.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_15.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_16.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_17.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_18.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_20_files/pdf_200kb_20_19.pdf': File exists
+transferred 20 200kb files
+
+real	0m57.376s
+user	1m8.926s
+sys	0m5.246s
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_0.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_1.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_2.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_3.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_4.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_5.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_6.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_7.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_8.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_9.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_10.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_11.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_12.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_13.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_14.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_15.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_16.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_17.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_18.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_19.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_20.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_21.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_22.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_23.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_24.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_25.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_26.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_27.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_28.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_29.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_30.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_31.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_32.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_33.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_34.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_35.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_36.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_37.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_38.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_40_files/pdf_200kb_40_39.pdf': File exists
+transferred 40 200kb files
+
+real	1m52.293s
+user	2m16.196s
+sys	0m10.789s
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_0.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_1.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_2.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_3.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_4.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_5.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_6.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_7.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_8.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_9.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_10.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_11.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_12.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_13.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_14.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_15.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_16.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_17.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_18.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_19.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_20.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_21.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_22.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_23.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_24.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_25.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_26.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_27.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_28.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_29.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_30.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_31.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_32.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_33.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_34.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_35.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_36.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_37.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_38.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_39.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_40.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_41.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_42.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_43.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_44.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_45.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_46.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_47.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_48.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_49.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_50.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_51.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_52.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_53.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_54.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_55.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_56.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_57.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_58.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_59.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_60.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_61.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_62.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_63.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_64.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_65.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_66.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_67.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_68.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_69.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_70.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_71.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_72.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_73.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_74.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_75.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_76.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_77.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_78.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_80_files/pdf_200kb_80_79.pdf': File exists
+transferred 80 200kb files
+
+real	3m44.862s
+user	4m33.627s
+sys	0m20.820s
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_0.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_1.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_2.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_3.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_4.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_5.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_6.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_7.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_8.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_9.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_10.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_11.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_12.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_13.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_14.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_15.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_16.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_17.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_18.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_19.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_20.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_21.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_22.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_23.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_24.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_25.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_26.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_27.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_28.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_29.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_30.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_31.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_32.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_33.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_34.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_35.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_36.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_37.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_38.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_39.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_40.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_41.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_42.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_43.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_44.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_45.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_46.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_47.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_48.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_49.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_50.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_51.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_52.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_53.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_54.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_55.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_56.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_57.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_58.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_59.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_60.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_61.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_62.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_63.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_64.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_65.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_66.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_67.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_68.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_69.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_70.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_71.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_72.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_73.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_74.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_75.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_76.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_77.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_78.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_79.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_80.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_81.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_82.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_83.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_84.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_85.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_86.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_87.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_88.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_89.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_90.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_91.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_92.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_93.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_94.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_95.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_96.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_97.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_98.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_99.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_100.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_101.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_102.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_103.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_104.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_105.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_106.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_107.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_108.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_109.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_110.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_111.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_112.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_113.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_114.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_115.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_116.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_117.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_118.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_119.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_120.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_121.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_122.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_123.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_124.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_125.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_126.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_127.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_128.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_129.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_130.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_131.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_132.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_133.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_134.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_135.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_136.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_137.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_138.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_139.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_140.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_141.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_142.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_143.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_144.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_145.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_146.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_147.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_148.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_149.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_150.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_151.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_200kb_160_files/pdf_200kb_160_155.pdf': File exists
+transferred 160 200kb files
+
+real	7m9.379s
+user	8m45.278s
+sys	0m39.963s
+
+Session terminated, killing shell... ...killed.
+
+———————————————————————————————————————New Log Starts————————————————
+Tue Mar 21 07:10:00 UTC 2017
+
+copyFromLocal: `hdfs:///user/pdf_50000kb_10_files/pdf_50000kb_10_0.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_10_files/pdf_50000kb_10_1.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_10_files/pdf_50000kb_10_2.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_10_files/pdf_50000kb_10_3.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_10_files/pdf_50000kb_10_4.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_10_files/pdf_50000kb_10_5.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_10_files/pdf_50000kb_10_6.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_10_files/pdf_50000kb_10_7.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_10_files/pdf_50000kb_10_8.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_10_files/pdf_50000kb_10_9.pdf': File exists
+
+transferred 10 50000kb files in below given time:
+
+real	0m26.075s
+user	0m32.842s
+sys	0m2.679s
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_0.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_1.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_2.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_3.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_4.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_5.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_6.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_7.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_8.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_9.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_10.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_11.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_12.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_13.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_14.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_15.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_16.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_17.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_18.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_20_files/pdf_50000kb_20_19.pdf': File exists
+
+transferred 20 50000kb files in below given time:
+
+real	0m53.359s
+user	1m7.631s
+sys	0m5.209s
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_0.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_1.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_2.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_3.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_4.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_5.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_6.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_7.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_8.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_9.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_10.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_11.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_12.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_13.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_14.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_15.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_16.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_17.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_18.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_19.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_20.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_21.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_22.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_23.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_24.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_25.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_26.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_27.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_28.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_29.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_30.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_31.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_32.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_33.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_34.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_35.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_36.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_37.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_38.pdf': File exists
+copyFromLocal: `hdfs:///user/pdf_50000kb_40_files/pdf_50000kb_40_39.pdf': File exists
+
+transferred 40 50000kb files in below given time:
+
+real	1m50.228s
+user	2m16.282s
+sys	0m10.449s
+
+transferred 80 50000kb files in below given time:
+
+real	15m18.464s
+user	5m44.509s
+sys	0m37.682s
+
+transferred 160 50000kb files in below given time:
+
+real	30m45.247s
+user	11m31.689s
+sys	1m11.604s
+
+transferred 10 100000kb files in below given time:
+
+real	2m41.777s
+user	0m46.489s
+sys	0m6.900s
+
+transferred 20 100000kb files in below given time:
+
+real	6m37.883s
+user	1m33.607s
+sys	0m15.307s
+
+transferred 40 100000kb files in below given time:
+
+real	11m19.348s
+user	3m6.665s
+sys	0m27.186s
+17/03/21 08:28:37 WARN hdfs.DFSClient: Slow ReadProcessor read fields took 32542ms (threshold=30000ms); ack: seqno: 1577 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 3066916 flag: 0 flag: 0 flag: 0, targets: [DatanodeInfoWithStorage[172.22.88.249:50010,DS-0eed9b87-3a9c-4f2c-b61a-23ed43de5763,DISK], DatanodeInfoWithStorage[172.22.88.251:50010,DS-534f7d54-436c-4e08-bb22-d3eacb535950,DISK], DatanodeInfoWithStorage[172.22.88.252:50010,DS-27c10602-e8c5-44dd-a7f4-a2bec675c600,DISK]]
+17/03/21 08:28:37 WARN hdfs.DFSClient: Slow waitForAckedSeqno took 34391ms (threshold=30000ms)
+
+transferred 80 100000kb files in below given time:
+
+real	31m39.628s
+user	6m7.848s
+sys	1m1.420s
+
+———————————————————————————————————————New Log Starts————————————————
+Tue Mar 21 08:56:41 UTC 2017
+
+17/03/21 09:12:30 WARN hdfs.DFSClient: Slow ReadProcessor read fields took 45209ms (threshold=30000ms); ack: seqno: 1577 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 6199432 flag: 0 flag: 0 flag: 0, targets: [DatanodeInfoWithStorage[172.22.88.249:50010,DS-0eed9b87-3a9c-4f2c-b61a-23ed43de5763,DISK], DatanodeInfoWithStorage[172.22.88.250:50010,DS-847b164b-da3b-4779-a8eb-cc0c77726a31,DISK], DatanodeInfoWithStorage[172.22.88.251:50010,DS-534f7d54-436c-4e08-bb22-d3eacb535950,DISK]]
+17/03/21 09:12:30 WARN hdfs.DFSClient: Slow waitForAckedSeqno took 67298ms (threshold=30000ms)
+17/03/21 09:18:36 WARN util.ShutdownHookManager: ShutdownHook 'ClientFinalizer' timeout, java.util.concurrent.TimeoutException
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:67)
+17/03/21 09:18:45 WARN hdfs.DFSClient: Caught exception 
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1245)
+	at java.lang.Thread.join(Thread.java:1319)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.closeResponder(DFSOutputStream.java:624)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.closeInternal(DFSOutputStream.java:592)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:588)
+17/03/21 09:18:45 ERROR hdfs.DFSClient: Failed to close inode 568260
+java.io.InterruptedIOException: Interrupted while waiting for data to be acknowledged by pipeline
+	at org.apache.hadoop.hdfs.DFSOutputStream.waitForAckedSeqno(DFSOutputStream.java:2218)
+	at org.apache.hadoop.hdfs.DFSOutputStream.flushInternal(DFSOutputStream.java:2197)
+	at org.apache.hadoop.hdfs.DFSOutputStream.closeImpl(DFSOutputStream.java:2333)
+	at org.apache.hadoop.hdfs.DFSOutputStream.close(DFSOutputStream.java:2303)
+	at org.apache.hadoop.hdfs.DFSClient.closeAllFilesBeingWritten(DFSClient.java:947)
+	at org.apache.hadoop.hdfs.DFSClient.closeOutputStreams(DFSClient.java:979)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.close(DistributedFileSystem.java:1192)
+	at org.apache.hadoop.fs.FileSystem$Cache.closeAll(FileSystem.java:2852)
+	at org.apache.hadoop.fs.FileSystem$Cache$ClientFinalizer.run(FileSystem.java:2869)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/21 09:18:45 INFO fs.FileSystem: Ignoring failure to deleteOnExit for path hdfs://asanand01-1.openstacklocal:8020/user/pdf_100000kb_160_files/pdf_100000kb_160_57.pdf._COPYING_
+copyFromLocal: java.nio.channels.ClosedChannelException
+	at org.apache.hadoop.hdfs.DFSOutputStream.checkClosed(DFSOutputStream.java:1617)
+	at org.apache.hadoop.fs.FSOutputSummer.write(FSOutputSummer.java:104)
+	at org.apache.hadoop.fs.FSDataOutputStream$PositionCache.write(FSDataOutputStream.java:58)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at org.apache.hadoop.io.IOUtils.copyBytes(IOUtils.java:87)
+	at org.apache.hadoop.io.IOUtils.copyBytes(IOUtils.java:59)
+	at org.apache.hadoop.io.IOUtils.copyBytes(IOUtils.java:119)
+	at org.apache.hadoop.fs.shell.CommandWithDestination$TargetFileSystem.writeStreamToFile(CommandWithDestination.java:467)
+	at org.apache.hadoop.fs.shell.CommandWithDestination.copyStreamToTarget(CommandWithDestination.java:392)
+	at org.apache.hadoop.fs.shell.CommandWithDestination.copyFileToTarget(CommandWithDestination.java:329)
+	at org.apache.hadoop.fs.shell.CommandWithDestination.processPath(CommandWithDestination.java:264)
+	at org.apache.hadoop.fs.shell.CommandWithDestination.processPath(CommandWithDestination.java:249)
+	at org.apache.hadoop.fs.shell.Command.processPaths(Command.java:317)
+	at org.apache.hadoop.fs.shell.Command.processPathArgument(Command.java:289)
+	at org.apache.hadoop.fs.shell.CommandWithDestination.processPathArgument(CommandWithDestination.java:244)
+	at org.apache.hadoop.fs.shell.Command.processArgument(Command.java:271)
+	at org.apache.hadoop.fs.shell.Command.processArguments(Command.java:255)
+	at org.apache.hadoop.fs.shell.CommandWithDestination.processArguments(CommandWithDestination.java:221)
+	at org.apache.hadoop.fs.shell.CopyCommands$Put.processArguments(CopyCommands.java:267)
+	at org.apache.hadoop.fs.shell.FsCommand.processRawArguments(FsCommand.java:119)
+	at org.apache.hadoop.fs.shell.Command.run(Command.java:165)
+	at org.apache.hadoop.fs.FsShell.run(FsShell.java:297)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:90)
+	at org.apache.hadoop.fs.FsShell.main(FsShell.java:350)
+
+copyFromLocal: `hdfs:/user/pdf_100000kb_80_files/pdf_100000kb_80_68.pdf': No such file or directory: `hdfs://asanand01-1.openstacklocal:8020/user/pdf_100000kb_80_files/pdf_100000kb_80_68.pdf'
+copyFromLocal: `hdfs:/user/pdf_100000kb_80_files/pdf_100000kb_80_69.pdf': No such file or directory: `hdfs://asanand01-1.openstacklocal:8020/user/pdf_100000kb_80_files/pdf_100000kb_80_69.pdf'
+copyFromLocal: `hdfs:/user/pdf_100000kb_80_files/pdf_100000kb_80_70.pdf': No such file or directory: `hdfs://asanand01-1.openstacklocal:8020/user/pdf_100000kb_80_files/pdf_100000kb_80_70.pdf'
+copyFromLocal: `hdfs:/user/pdf_100000kb_80_files/pdf_100000kb_80_71.pdf': No such file or directory: `hdfs://asanand01-1.openstacklocal:8020/user/pdf_100000kb_80_files/pdf_100000kb_80_71.pdf'
+copyFromLocal: `hdfs:/user/pdf_100000kb_80_files/pdf_100000kb_80_72.pdf': No such file or directory: `hdfs://asanand01-1.openstacklocal:8020/user/pdf_100000kb_80_files/pdf_100000kb_80_72.pdf'
+copyFromLocal: `hdfs:/user/pdf_100000kb_80_files/pdf_100000kb_80_73.pdf': No such file or directory: `hdfs://asanand01-1.openstacklocal:8020/user/pdf_100000kb_80_files/pdf_100000kb_80_73.pdf'
+copyFromLocal: `hdfs:/user/pdf_100000kb_80_files/pdf_100000kb_80_74.pdf': No such file or directory: `hdfs://asanand01-1.openstacklocal:8020/user/pdf_100000kb_80_files/pdf_100000kb_80_74.pdf'
+copyFromLocal: `hdfs:/user/pdf_100000kb_80_files/pdf_100000kb_80_75.pdf': No such file or directory: `hdfs://asanand01-1.openstacklocal:8020/user/pdf_100000kb_80_files/pdf_100000kb_80_75.pdf'
+copyFromLocal: `hdfs:/user/pdf_100000kb_80_files/pdf_100000kb_80_76.pdf': No such file or directory: `hdfs://asanand01-1.openstacklocal:8020/user/pdf_100000kb_80_files/pdf_100000kb_80_76.pdf'
+copyFromLocal: `hdfs:/user/pdf_100000kb_80_files/pdf_100000kb_80_77.pdf': No such file or directory: `hdfs://asanand01-1.openstacklocal:8020/user/pdf_100000kb_80_files/pdf_100000kb_80_77.pdf'
+copyFromLocal: `hdfs:/user/pdf_100000kb_80_files/pdf_100000kb_80_78.pdf': No such file or directory: `hdfs://asanand01-1.openstacklocal:8020/user/pdf_100000kb_80_files/pdf_100000kb_80_78.pdf'
+copyFromLocal: `hdfs:/user/pdf_100000kb_80_files/pdf_100000kb_80_79.pdf': No such file or directory: `hdfs://asanand01-1.openstacklocal:8020/user/pdf_100000kb_80_files/pdf_100000kb_80_79.pdf'
+
+transferred 80 100000kb files in below given time:
+
+real	35m10.708s
+user	5m41.528s
+sys	0m54.267s
+17/03/21 09:35:22 WARN util.ShutdownHookManager: ShutdownHook 'ClientFinalizer' timeout, java.util.concurrent.TimeoutException
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:67)
+17/03/21 09:35:29 WARN hdfs.DFSClient: DataStreamer Exception
+java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:478)
+	at org.apache.hadoop.net.SocketOutputStream$Writer.performIO(SocketOutputStream.java:63)
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:142)
+	at org.apache.hadoop.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at org.apache.hadoop.net.SocketOutputStream.write(SocketOutputStream.java:117)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at org.apache.hadoop.hdfs.DFSPacket.writeTo(DFSPacket.java:176)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:522)
+17/03/21 09:35:29 WARN hdfs.DFSClient: Caught exception 
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1245)
+	at java.lang.Thread.join(Thread.java:1319)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.closeResponder(DFSOutputStream.java:624)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.closeInternal(DFSOutputStream.java:592)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:588)
+17/03/21 09:35:29 ERROR hdfs.DFSClient: Failed to close inode 568437
+java.io.InterruptedIOException: Interrupted while waiting for data to be acknowledged by pipeline
+	at org.apache.hadoop.hdfs.DFSOutputStream.waitForAckedSeqno(DFSOutputStream.java:2218)
+	at org.apache.hadoop.hdfs.DFSOutputStream.flushInternal(DFSOutputStream.java:2197)
+	at org.apache.hadoop.hdfs.DFSOutputStream.closeImpl(DFSOutputStream.java:2333)
+	at org.apache.hadoop.hdfs.DFSOutputStream.close(DFSOutputStream.java:2303)
+	at org.apache.hadoop.hdfs.DFSClient.closeAllFilesBeingWritten(DFSClient.java:947)
+	at org.apache.hadoop.hdfs.DFSClient.closeOutputStreams(DFSClient.java:979)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.close(DistributedFileSystem.java:1192)
+	at org.apache.hadoop.fs.FileSystem$Cache.closeAll(FileSystem.java:2852)
+	at org.apache.hadoop.fs.FileSystem$Cache$ClientFinalizer.run(FileSystem.java:2869)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/21 09:35:29 INFO fs.FileSystem: Ignoring failure to deleteOnExit for path hdfs://asanand01-1.openstacklocal:8020/user/pdf_100000kb_160_files/pdf_100000kb_160_12.pdf._COPYING_
+copyFromLocal: java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:478)
+	at org.apache.hadoop.net.SocketOutputStream$Writer.performIO(SocketOutputStream.java:63)
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:142)
+	at org.apache.hadoop.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at org.apache.hadoop.net.SocketOutputStream.write(SocketOutputStream.java:117)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:122)
+	at java.io.DataOutputStream.write(DataOutputStream.java:107)
+	at org.apache.hadoop.hdfs.DFSPacket.writeTo(DFSPacket.java:176)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:522)
+
+
+———————————————————————————————————————New Log Starts————————————————
+Tue Mar 21 09:36:09 UTC 2017
+
+
+transferred 80 100000kb files in below given time:
+
+real	31m18.302s
+user	6m5.922s
+sys	1m2.007s
+
+transferred 160 100000kb files in below given time:
+
+real	50m50.560s
+user	12m9.858s
+sys	2m1.858s
