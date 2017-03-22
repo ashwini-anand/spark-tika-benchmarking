@@ -20,6 +20,6 @@ do
       hdfs dfs -copyFromLocal ${local_input_dir}/pdf_${sizes[i]}.pdf ${hdfs_input_dir}/pdf_${sizes[i]}kb_${counts[j]}_files/pdf_${sizes[i]}kb_${counts[j]}_$k.pdf
     done
     echo ""
-    echo transferred ${counts[j]} ${sizes[i]}kb files in given(below) time:)
+    echo transferred ${counts[j]} ${sizes[i]}kb files in below given time:)
   done
 done) >> logs.txt 2>&1
