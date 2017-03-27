@@ -1,6 +1,7 @@
 #local_input_dir must have pdf files pdf_100000.pdf , pdf_10000.pdf , pdf_1000.pdf , pdf_200.pdf , pdf_50000.pdf , pdf_500.pdf  available before running this script. Numeric value in name of files refers #to values of sizes array (declared in var.sh)
-
-source var.sh
+#source var.sh
+my_dir=`dirname $0`
+source $my_dir/var.sh
 declare local_input_dir="$1"
 declare hdfs_input_dir="$2"
 
