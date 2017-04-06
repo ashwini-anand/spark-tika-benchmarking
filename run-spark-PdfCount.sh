@@ -11,7 +11,7 @@ do
   do
     for((k=0; k<$runs_per_folder; k++))
     do
-      spark-submit --class FileDetectorHdfs --master yarn --deploy-mode cluster --driver-memory 20g --executor-memory 20g --executor-cores 5 --queue default jars/tmp/spark-tika.jar ${hdfs_input_dir}/pdf_${sizes[i]}kb_${counts[j]}_files/ ${hdfs_output_dir} 
+      spark-submit --class FileDetectorHdfs --master yarn --deploy-mode cluster --driver-memory 6g --executor-memory 16g --num-executors 5 --executor-cores 10 --conf "spark.executor.extraJavaOptions=-XX:+UseG1GC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps" --queue default jars/tmp/spark-tika.jar ${hdfs_input_dir}/pdf_${sizes[i]}kb_${counts[j]}_files/ ${hdfs_output_dir} 
       sleep 5
     done
   done
